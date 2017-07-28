@@ -10,7 +10,7 @@ body{
 }
 
 	.mypic-bg{
-		background-image: url('img/me.jpg');
+		background-image: url('img/me.JPG');
 		background-size: cover;
 		position: absolute;
 		top: 0;
@@ -54,9 +54,39 @@ body{
 				}
 
 		.header-content{
-			
+
 		}
 
 .main-content{
-	
+	background-color: #263238;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin:0;
 }
+
+	.section-title{
+
+	}
+
+		.section-title-bar {
+		    background-color: #F95759;
+		    display: inline-block;
+		    width: 100%;
+		    max-width: 60px;
+		    height: auto;
+		    margin-right: 2%;
+		}
+
+			.section-title-bar > p {
+			    color: #fff;
+			    font-weight: 700;
+			    font-size: 24px;
+			    line-height: 0;
+			    text-align: center;
+			}
+
+			.section-title > h3 {
+			    display: inline-block;
+			    color: #fff;
+			}
