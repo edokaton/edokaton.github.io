@@ -8,76 +8,178 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="me.css">
 	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header" id="me">
+		<header class="main-navbar">
+			<ul class="navbar-ul">
+				<li><a href="#me">Me</a></li>
+				<!-- <li>About</li> -->
+				<li><a href="#experience">Experience</a></li>
+				<li><a href="#education">Educations</a></li>
+				<li><a href="#myskill">Skill</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</header><!-- /header -->
+
+		<main class="header-content">
+			<div class="left-header">
+				<div class="left-header-inner">
+					<img src="img/name.png" alt="Edo KS">
+				</div>
+			</div>
+
+			<div class="right-header">
+				<div class="header-caption">
+					<p><strong>I'm a Full Stack Developer</strong> <small>from Indonesia living in Surabaya, where I work as a web programmer almost 2 years here. I'm proficient in <strong>Laravel</strong> also some <strong>ReactJs</strong> and <strong>React Native</strong> skills. Bootstrap and Jquery? Of course, say no more</small></p>
+					<p><small>If you want to know more about me, my work or if you're an Arabian Prince who wants to offer me a lot of money, feel free to contact me on <strong>edokaton at gmail.com</strong></small></p>
+				</div>
+			</div>
+		</main>
 
 		<div class="mypic-bg">
-			<div class="mypic-bg-opac">
-				<header class="main-navbar">
-					<ul class="navbar-ul">
-						<li><a href="">Me</a></li>
-						<!-- <li>About</li> -->
-						<li><a href="#myskill">Skill</a></li>
-						<li><a href="#experience">Experience</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#service">Services</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</header><!-- /header -->
-
-				<main class="header-content">
-
-				</main>
-			</div>
-		</div>
-
+			<div class="mypic-bg-opac"></div>
+		</div>		
 	</header><!-- /header -->
 
 	<main class="main-content">
+		<!-- skills -->
+		<section class="content-section experience" id="experience">
+			<div class="content-section-inner">
+				<div class="section-title">
+					<div class="section-title-bar experience">
+						<p><span class="glyphicon glyphicon-briefcase"></span></p>
+					</div>
+					<h3>Experience</h3>
+				</div>
+
+				<div class="progress-bar-wrapper experience">
+					<ol>
+						<li>
+							<div class="left-exp">
+								<p>FEBRUARY 2017 - JULY 2017</p>
+								<p>5 Months</p>
+							</div>
+							<div class="right-exp">
+								<p class="lead">Web Programmer</p>
+								<p>PT. CHILIKODE DIGITAL INDONESIA | Surabaya, Jawa Timur, Indonesia</p>
+								<p>- Create new module for Keepo.me website</p>
+								<p>- Fix minor bugs</p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<div class="left-exp">
+								<p>MAY 2016 - JANUARY 2017</p>
+								<p>8 Months</p>
+							</div>
+							<div class="right-exp">
+								<p class="lead">Web Programmer</p>
+								<p>PT. TAMBORA AGUNG MAKMUR | Sidoarjo, Jawa Timur, Indonesia</p>
+								<p>- Build new website from scratch</p>
+								<p>- Maintenance and improve client website</p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<div class="left-exp">
+								<p>SEPTEMBER 2015 - APRIL 2016</p>
+								<p>8 Months</p>
+							</div>
+							<div class="right-exp">
+								<p class="lead">Web Programmer</p>
+								<p>BRIDGE MARKETING | Surabaya, Jawa Timur, Indonesia</p>
+								<p>- Customizing wordpress theme</p>
+								<p>- Improve Company website</p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
+		<section class="content-section education" id="education">
+			<div class="content-section-inner">
+				<div class="section-title">
+					<div class="section-title-bar education">
+						<p><span class="glyphicon glyphicon-education"></span></p>
+					</div>
+					<h3>Educations</h3>
+				</div>
+
+				<div class="progress-bar-wrapper experience">
+					<ol>
+						<li>
+							<div class="left-exp">
+								<p>SEPTEMBER 2013 - SEPTEMBER 2017</p>
+							</div>
+							<div class="right-exp">
+								<p class="lead">UNIVERSITAS 17 AGUSTUS 1945 SURABAYA  |  Surabaya, Jawa Timur, Indonesia</p>
+								<p>Bachelor's Degree in Computer Science/Information Technology</p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+						<li>
+							<div class="left-exp">
+								<p>JULY 2010 - JUNE 2013</p>
+							</div>
+							<div class="right-exp">
+								<p class="lead">SMK NEGERI 6 SURABAYA  |  Surabaya, Jawa Timur, Indonesia</p>
+								<p>MULTIMEDIA</p>
+							</div>
+							<div class="clearfix"></div>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+
 		<section class="content-section myskill" id="myskill">
 			<div class="content-section-inner">
 				<div class="section-title">
 					<div class="section-title-bar myskill">
-						<p>S</p>
+						<p><span class="glyphicon glyphicon-console"></span></p>
 					</div>
 					<h3>Skills</h3>
 				</div>
-				
+
 				<div class="progress-bar-wrapper">
 					<h3>Base Language</h3>
 					<ol>
 						<li>
 							<p>HTML5</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-warning custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
-							    88%
+							  <div class="progress-bar custom blue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 91%">
+							    91%
 							  </div>
 							</div>
 						</li>
 						<li>
 							<p>CSS3</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
-							    90%
+							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 92%">
+							    92%
 							  </div>
 							</div>
 						</li>
 						<li>
 							<p>JAVASCRIPT</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-warning custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 78%">
-							    78%
+							  <div class="progress-bar custom blue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+							    80%
 							  </div>
 							</div>
 						</li>
 						<li>
 							<p>PHP</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							    80%
+							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 83%">
+							    83%
 							  </div>
 							</div>
 						</li>
@@ -88,8 +190,8 @@
 						<li>
 							<p>JQuery</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-warning custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
-							    82%
+							  <div class="progress-bar custom blue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 88%">
+							    88%
 							  </div>
 							</div>
 						</li>
@@ -104,46 +206,29 @@
 						<li>
 							<p>Laravel 5</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-warning custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 84%">
-							    84%
+							  <div class="progress-bar custom blue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 86%">
+							    86%
 							  </div>
 							</div>
 						</li>
 						<li>
 							<p>React js</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-							    70%
+							  <div class="progress-bar progress-bar-danger custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 77%">
+							    77%
 							  </div>
 							</div>
 						</li>
 						<li>
 							<p>React Native</p>
 							<div class="progress custom">
-							  <div class="progress-bar progress-bar-warning custom" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-							    80%
+							  <div class="progress-bar custom blue" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 81%">
+							    81%
 							  </div>
 							</div>
 						</li>
 					</ol>
 				</div>
-			</div>
-		</section>
-
-		<section class="content-section experience" id="experience">
-			<div class="content-section-inner">
-				<div class="section-title">
-					<div class="section-title-bar experience">
-						<p>E</p>
-					</div>
-					<h3>Experience</h3>
-				</div>
-
-				<ol>
-					<li>PT. CHILIKODE DIGITAL INDONESIA (FEBRUARI 2017 - JULI 2017)</li>
-					<li>PT. TAMBORA AGUNG MAKMUR (MEI 2016 - JANUARI 2017)</li>
-					<li>BRIDGE MARKETING (SEPTEMBER 2015 - APRIL 2016)</li>
-				</ol>
 			</div>
 		</section>
 
@@ -158,18 +243,6 @@
 
 			</div>
 		</section>
-
-		<section class="content-section service" id="service">
-			<div class="content-section-inner">
-				<div class="section-title">
-					<div class="section-title-bar service">
-						<p>S</p>
-					</div>
-					<h3>Services</h3>
-				</div>
-
-			</div>
-		</section>
 	</main>
 
 	<footer class="my-contact">
@@ -177,7 +250,44 @@
 	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<!-- <script type="text/javascript"></script> -->
+	<script type="text/javascript">
+		var $root = $('html, body');
+		var $navbar = $('.main-navbar');
+		var $navAnchor = $('.main-navbar ul li a');
+
+		function toBlack(){
+			$navbar.css('background-color', 'rgba(0,0,0,.9)');
+			$navAnchor.css('color', '#2980b9');
+		}
+
+		function toTransp(){
+			$navbar.css('background-color', 'rgba(0,0,0,.0)');
+			$navAnchor.css('color', '#fff');
+		}
+
+		$(document).on('click', 'a', function(event){
+		    event.preventDefault();
+
+		    $root.animate({
+		        scrollTop: $( $.attr(this, 'href') ).offset().top
+		    }, 1000);
+		});
+
+		$(function(){
+			var state = true;
+
+			$(window).scroll(function() {
+				if ($(this).scrollTop() > 650) {
+					setInterval(toBlack(), 2000);
+				}else if($(this).scrollTop() < 650){
+					setInterval(toTransp(), 2000);
+				}
+				// state = !state;
+			});
+		});
+	</script>
 </body>
 </html>
