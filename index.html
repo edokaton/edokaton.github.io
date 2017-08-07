@@ -6,13 +6,15 @@
 	<title>I am Edo Katon Setiawan</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,600i,700,700i" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="me.css">
+	<link rel="stylesheet" type="text/css" href="css/me.css">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".main-navbar">
 	<header class="main-header" id="me">
 		<header class="main-navbar">
 			<ul class="navbar-ul">
@@ -241,6 +243,22 @@
 					<h3>Portfolio</h3>
 				</div>
 
+				<div class="portfolio-slide">					
+					<div class="small-slide">
+						<a href="img/portfolio/bulat.png"><img src="img/portfolio/bulat.png" alt="portfolio image"></a>
+						<a href="img/portfolio/cafe.png"><img src="img/portfolio/cafe.png" alt="portfolio image"></a>
+						<a href="img/portfolio/dispora1.png"><img src="img/portfolio/dispora1.png" alt="portfolio image"></a>
+						<a href="img/portfolio/keepo.png"><img src="img/portfolio/keepo.png" alt="portfolio image"></a>
+						<a href="img/portfolio/mobiletest2.png"><img src="img/portfolio/mobiletest2.png" alt="portfolio image"></a>
+						<a href="img/portfolio/nixon1.png"><img src="img/portfolio/nixon1.png" alt="portfolio image"></a>
+						<a href="img/portfolio/obvit2.png"><img src="img/portfolio/obvit2.png" alt="portfolio image"></a>
+						<a href="img/portfolio/polkit1.png"><img src="img/portfolio/polkit1.png" alt="portfolio image"></a>
+						<a href="img/portfolio/polmes2.png"><img src="img/portfolio/polmes2.png" alt="portfolio image"></a>
+						<a href="img/portfolio/redisland.png"><img src="img/portfolio/redisland.png" alt="portfolio image"></a>
+						<a href="img/portfolio/reportid1.png"><img src="img/portfolio/reportid1.png" alt="portfolio image"></a>
+						<div class="clearfix"></div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
@@ -263,6 +281,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script> -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
 	<script type="text/javascript">
 		var $root = $('html, body');
 		var $navbar = $('.main-navbar');
@@ -288,6 +309,23 @@
 
 		$(function(){
 			var state = true;
+
+			$('.small-slide').magnificPopup({
+			  delegate: 'a', // child items selector, by clicking on it popup will open
+			  type: 'image',
+			  gallery:{
+			    enabled:true
+			  },
+			  mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+			  zoom: {
+			    enabled: true, // By default it's false, so don't forget to enable it
+			    duration: 300, // duration of the effect, in milliseconds
+			    easing: 'ease-in-out', // CSS transition easing function			    
+			    opener: function(openerElement) {			      
+			      return openerElement.is('img') ? openerElement : openerElement.find('img');
+			    }
+			  }
+			});			
 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > 650) {
