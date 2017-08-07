@@ -16,13 +16,13 @@
 	<header class="main-header" id="me">
 		<header class="main-navbar">
 			<ul class="navbar-ul">
-				<li><a href="#me">Me</a></li>
+				<li><a class="nav-anchor" href="#me">Me</a></li>
 				<!-- <li>About</li> -->
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#education">Educations</a></li>
-				<li><a href="#myskill">Skill</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="nav-anchor" href="#experience">Experience</a></li>
+				<li><a class="nav-anchor" href="#education">Educations</a></li>
+				<li><a class="nav-anchor" href="#myskill">Skill</a></li>
+				<li><a class="nav-anchor" href="#portfolio">Portfolio</a></li>
+				<li><a class="nav-anchor" href="#contact">Contact</a></li>
 			</ul>
 		</header><!-- /header -->
 
@@ -130,7 +130,7 @@
 							</div>
 							<div class="right-exp">
 								<p class="lead">SMK NEGERI 6 SURABAYA  |  Surabaya, Jawa Timur, Indonesia</p>
-								<p>MULTIMEDIA</p>
+								<p>Vocational High School in Multimedia</p>
 							</div>
 							<div class="clearfix"></div>
 						</li>
@@ -245,8 +245,18 @@
 		</section>
 	</main>
 
-	<footer class="my-contact">
+	<footer class="my-contact" id=contact>
+		<p>Contact me</p>
+		<p>on</p>
+		<div class="social-media">
+			<ul>
+				<li><span class="social-icon"><img src="img/fb.png" alt="facebook edo katon setiawan"></span><a href="https://www.facebook.com/edo.katonsetiawan" target="_blank">Edo Katon Setiawan</a></li>
+				<li><span class="social-icon"><img src="img/ig.png" alt="facebook edo katon setiawan"></span>edokaton</li>
+				<li><span class="social-icon"><img src="img/email.png" alt="facebook edo katon setiawan"></span>edokaton at gmail.com</li>
+			</ul>
+		</div>
 
+		<p class="created-by">Created by Edo Katon Setiawan</p>
 	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
@@ -268,7 +278,7 @@
 			$navAnchor.css('color', '#fff');
 		}
 
-		$(document).on('click', 'a', function(event){
+		$(document).on('click', 'a.nav-anchor', function(event){
 		    event.preventDefault();
 
 		    $root.animate({

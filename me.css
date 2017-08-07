@@ -15,6 +15,7 @@ body{
 	.mypic-bg{
 		background-image: url('img/me.JPG');
 		background-size: cover;
+		background-position: center;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -50,6 +51,8 @@ body{
 			.main-navbar > ul{
 				list-style: none;
 				width: 100%;
+				margin: 0;
+    			padding: 0;
 			}
 
 				.main-navbar > ul > li{
@@ -108,7 +111,7 @@ body{
 					line-height: 130px;
 				}*/
 
-			.right-header{				
+			.right-header{
 				width: 50%;
 				height: 100%;
 				float: right;
@@ -285,4 +288,106 @@ body{
 .progress-bar-wrapper > ol > li > div.right-exp{
 	float: left;
 	width: 70%;
+}
+
+
+
+/*=================================================== contact me ====================================================*/
+.my-contact{
+	background-color: #18171F;
+	padding: 3% 0 20px;
+	text-align: center;
+	color: #34495e;
+	font-weight: bold;
+}
+
+	.my-contact > .social-media > ul{
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+		.my-contact > .social-media >  ul > li{
+			display: inline-block;
+			width: 15%;
+		}
+
+			.my-contact > .social-media >  ul > li > a{
+				color: #34495e;
+				font-weight: bold;
+				text-decoration: none;
+			}
+
+			.my-contact > .social-media >  ul > li > span > img{
+				width: 100%;
+				max-width: 25px;
+				height: auto;
+				margin: 0 4%;
+			}
+
+	.created-by{
+		margin: 5% auto 0;
+	}
+
+@media only screen and (max-width: 480px){
+	.main-header {
+	    min-height: 750px;
+	}
+
+	.main-navbar {	    
+	    padding: 20px 0 40px;
+	}
+
+	.main-navbar > ul > li {
+	    width: 30%;
+	}
+
+	.left-header {
+	    width: 100%;
+	    height: auto;
+	}
+
+	.left-header-inner {
+	    margin: 30% 15% 0;
+	    text-align: center;
+	}
+
+	.left-header-inner > img {
+	    width: 50%;
+	    height: auto;
+	}
+
+	.right-header {
+	    width: 100%;
+	    height: auto;
+	}
+
+	.header-caption {
+	    margin: 5% auto 0;
+	    text-align: center;
+	}
+
+	.header-caption > p:nth-child(1), .header-caption > p:nth-child(2) {
+	    margin: 0 5%;
+	}
+
+
+	/*content section*/
+	.content-section-inner{
+		width: 100%;
+	}
+
+	/*contact*/
+	.my-contact > p{
+		line-height: 14px;
+	}
+
+	.social-media{
+		text-align: left;
+	}
+
+	.my-contact > .social-media >  ul > li{
+		width: 100%;
+		margin: 5px 0;
+	}
 }
