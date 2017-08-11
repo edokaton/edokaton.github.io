@@ -245,6 +245,47 @@ body{
 	margin: 20px 30px;
 }
 
+.progress-bar-wrapper.skill{
+	margin: 0 30px;
+}
+
+.progress-bar-wrapper > div.left-progress, .progress-bar-wrapper > div.right-progress{
+	width: 50%;
+	float: left;
+	padding: 10px 5%;
+}
+
+.progress-bar-wrapper > div > ol{
+	margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.progress-bar-wrapper > div > h3{
+	color: #2980b9;
+	margin-top: 30px;
+	margin-left: -15px;
+}
+
+.progress-bar-wrapper > div > ol > li > p {
+    color: #fff;
+}
+
+.progress-bar-wrapper > div > ol > li > div.progress.custom {
+	margin-left: -15px;
+	background-color: #7f8c8d;
+}
+
+.progress-bar-wrapper > div > ol > li > div.progress.custom > div.progress-bar.custom.blue {
+	background-color: #3463AE;
+}
+
+.progress-bar-wrapper > div > ol > li > div.progress.custom > div.progress-bar-danger.custom {
+	background-color: #c0392b;
+}
+
+
+
 .progress-bar-wrapper > ol{
 	margin: 0;
     padding: 0;
