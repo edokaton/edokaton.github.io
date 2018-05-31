@@ -318,16 +318,19 @@ body{
 
 /*===================================================  experience =================================================================*/
 .progress-bar-wrapper.experience > ol > li{
-	padding: 10px 0;
+	padding: 10px 0;	
 }
 
-.progress-bar-wrapper.experience > ol > li > div.left-exp{
-	float: left;
+.progress-bar-wrapper.experience > ol > li > div{
+	display: flex;
+}
+
+.progress-bar-wrapper.experience > ol > li > div > div.left-exp{	
 	width: 30%;
+	padding: 5px 0 0;
 }
 
-.progress-bar-wrapper > ol > li > div.right-exp{
-	float: left;
+.progress-bar-wrapper > ol > li > div > div.right-exp{	
 	width: 70%;
 }
 
